@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Inter:wght@300;500;700&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Inter:wght@300;500;700&family=Josefin+Sans:ital,wght@0,300;1,300&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Inter:wght@300;500;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,300&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* font-family: 'Alata', sans-serif;
 font-family: 'Josefin Sans', sans-serif; */
@@ -19,31 +18,70 @@ font-family: 'Josefin Sans', sans-serif; */
 }
 
 body {
-  font-family: "Alata", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 0%, 55%);
+  background: url(/images/mobile/image-hero.jpg) no-repeat;
+  background-size: contain;
+}
+
+.first-section,
+.copy-heading,
+.third-section-heading,
+span {
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .header {
-  background: url(/images/mobile/image-hero.jpg) no-repeat;
-  max-width: 100%;
-}
-
-.upper-section {
   display: flex;
   justify-content: space-between;
   padding: 2rem 1.5rem;
 }
 
-.lower-section > * {
-  text-transform: uppercase;
-  justify-content: center;
-  padding: 5%;
-  margin: 6rem auto;
+.first-section {
+  font-size: 42px;
+  color: white;
+  max-width: min-content;
+  padding: 1rem;
+  margin: 8rem auto;
   border: 1px solid white;
 }
 
-span {
-  text-transform: uppercase;
+.second-section > * {
+  margin: 12rem 2rem 2rem;
+  width: 85%;
+  border: 1px solid red;
+}
+
+.third-section-heading,
+.copy-heading {
+  font-size: 30px;
+  color: hsl(0, 0%, 0%);
+}
+
+.copy {
+  font-family: "Alata", sans-serif;
+  font-size: small;
+}
+
+.second-section-copy > * {
+  text-align: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.third-section-heading {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.gallery {
+  margin-top: 2rem;
+  width: 85%;
+}
+
+. span {
   font-size: 30px;
 }
 
