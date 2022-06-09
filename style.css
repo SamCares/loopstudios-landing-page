@@ -22,14 +22,30 @@ body {
   color: hsl(0, 0%, 55%);
   background: url(/images/mobile/image-hero.jpg) no-repeat;
   background-size: contain;
+  text-align: center;
 }
 
 .first-section,
 .copy-heading,
 .third-section-heading,
-span {
+.span {
   text-transform: uppercase;
   font-weight: 300;
+}
+.first-section,
+.span {
+  text-align: left;
+}
+
+.first-section,
+.span,
+h2:hover,
+.footer-nav {
+  color: white;
+}
+
+ul > * {
+  list-style-type: none;
 }
 
 .header {
@@ -38,19 +54,25 @@ span {
   padding: 2rem 1.5rem;
 }
 
+i.logo {
+  width: 80%;
+}
+
+.nav {
+  display: none;
+}
+
 .first-section {
   font-size: 42px;
-  color: white;
   max-width: min-content;
   padding: 1rem;
-  margin: 8rem auto;
+  margin: 9rem auto;
   border: 1px solid white;
 }
 
 .second-section > * {
-  margin: 12rem 2rem 2rem;
+  margin: 9rem 8% 2rem;
   width: 85%;
-  border: 1px solid red;
 }
 
 .third-section-heading,
@@ -59,33 +81,55 @@ span {
   color: hsl(0, 0%, 0%);
 }
 
-.copy {
+.copy,
+h2 {
   font-family: "Alata", sans-serif;
   font-size: small;
 }
 
 .second-section-copy > * {
-  text-align: center;
   justify-content: center;
   width: 70%;
   margin: 0 auto;
 }
 
 .third-section-heading {
-  margin-top: 5rem;
-  text-align: center;
+  margin: 5rem 0 2rem;
 }
 
 .gallery {
-  margin-top: 2rem;
+  margin: 1.5rem 8% 0rem;
   width: 85%;
 }
 
-. span {
-  font-size: 30px;
+.span {
+  font-size: 1.5rem;
+  position: absolute;
+  transform: translate(3rem, -4rem);
 }
 
-.nav {
-  /* visibility: hidden; */
-  display: flex;
+h2 {
+  border: 1px solid black;
+  color: black;
+  text-transform: uppercase;
+  margin: 1.5rem auto;
+  max-width: max-content;
+  padding: 0.8rem 2.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+}
+
+h2:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 0%);
+}
+
+footer {
+  background-color: black;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+.footer-nav > * {
+  padding: 1rem;
 }
