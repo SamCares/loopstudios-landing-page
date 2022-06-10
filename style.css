@@ -1,7 +1,5 @@
+/* Mobile Design */
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Inter:wght@300;500;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,300&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-/* font-family: 'Alata', sans-serif;
-font-family: 'Josefin Sans', sans-serif; */
 
 * {
   margin: 0;
@@ -117,6 +115,7 @@ h2 {
   padding: 0.8rem 2.5rem;
   font-size: 1rem;
   letter-spacing: 0.5rem;
+  transition-delay: 0.2s;
 }
 
 h2:hover {
@@ -127,9 +126,52 @@ h2:hover {
 footer {
   background-color: black;
   margin-top: 5rem;
-  padding: 3rem;
+  padding: 2.5rem;
 }
 
 .footer-nav > * {
   padding: 1rem;
+  max-width: min-content;
+}
+
+.copyright,
+.attribution {
+  margin-top: 1rem;
+}
+
+.footer-icons > i {
+  padding-right: 0.5rem;
+}
+
+.footer-icons > i:hover,
+.footer-nav > li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/* Desktop Design */
+@media screen and (min-width: 500px) {
+  .main-container {
+    width: 1440px;
+  }
+  body {
+    background: url(/images/desktop/image-hero.jpg) no-repeat;
+    background-size: contain;
+  }
+
+  .nav {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
 }
