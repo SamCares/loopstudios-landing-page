@@ -38,7 +38,8 @@ body {
 .first-section,
 .span,
 h2:hover,
-.footer-nav {
+.footer-nav,
+.nav {
   color: white;
 }
 
@@ -131,7 +132,7 @@ footer {
 
 .footer-nav > * {
   padding: 1rem;
-  max-width: min-content;
+  /* max-width: min-content; */
 }
 
 .copyright,
@@ -171,6 +172,7 @@ footer {
   .nav {
     display: flex;
   }
+
   .hamburger {
     display: none;
   }
