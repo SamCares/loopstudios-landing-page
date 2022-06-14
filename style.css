@@ -45,11 +45,13 @@ h2:hover,
 
 ul > * {
   list-style-type: none;
+  padding: 1rem;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 1.5rem;
 }
 
@@ -169,11 +171,61 @@ footer {
     background-size: contain;
   }
 
+  .header {
+    padding: 2rem 10rem;
+  }
+
+  .first-section {
+    font-size: 70px;
+    padding: 1.5rem;
+    margin: 9rem 10rem;
+    max-width: 45%;
+  }
+
   .nav {
     display: flex;
   }
 
   .hamburger {
     display: none;
+  }
+
+  .second-section {
+    margin-bottom: 10rem;
+  }
+
+  .second-section > * {
+    width: 50%;
+    margin-left: -17rem;
+  }
+  .second-section-copy {
+    position: absolute;
+    width: 40%;
+    background-color: white;
+    transform: translate(720px, -500px);
+    padding: 3.5rem;
+  }
+
+  .copy,
+  .copy-heading {
+    width: auto;
+    text-align: left;
+  }
+
+  .third-section-heading,
+  .copy-heading {
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .copy {
+    font-size: medium;
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 3rem 10%;
   }
 }
