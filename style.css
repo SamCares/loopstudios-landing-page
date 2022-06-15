@@ -186,6 +186,11 @@ footer {
     display: flex;
   }
 
+  li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+  }
+
   .hamburger {
     display: none;
   }
