@@ -199,6 +199,18 @@ footer {
     margin-bottom: 10rem;
   }
 
+  #deep-earth-img {
+    content: url("/images/desktop/image-deep-earth.jpg");
+  }
+
+  #night-arcade-img {
+    content: url("/images/desktop/image-night-arcade.jpg");
+  }
+
+  #soccer-team-img {
+    content: url("/images/desktop/image-soccer-team.jpg");
+  }
+
   .second-section > * {
     width: 50%;
     margin-left: -17rem;
