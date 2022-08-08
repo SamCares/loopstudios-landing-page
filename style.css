@@ -103,8 +103,12 @@ h2 {
   width: 85%;
 }
 
-#see-all {
+.see-all {
   display: none;
+}
+
+.show {
+  display: block;
 }
 
 .span {
@@ -113,7 +117,7 @@ h2 {
   transform: translate(3rem, -4rem);
 }
 
-h2 {
+button {
   border: 1px solid black;
   color: black;
   text-transform: uppercase;
@@ -125,9 +129,10 @@ h2 {
   transition-delay: 0.2s;
 }
 
-h2:hover {
+button:hover {
   cursor: pointer;
   background-color: hsl(0, 0%, 0%);
+  color: white;
 }
 
 footer {
