@@ -223,6 +223,7 @@ footer {
   picture:hover {
     cursor: pointer;
     opacity: 30%;
+    transition-duration: 0.2s;
   }
 
   .copy,
