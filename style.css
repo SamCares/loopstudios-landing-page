@@ -63,6 +63,10 @@ i.logo {
   display: none;
 }
 
+.close {
+  display: none;
+}
+
 .first-section {
   font-size: 42px;
   max-width: min-content;
@@ -107,10 +111,6 @@ h2 {
   display: none;
 }
 
-.show {
-  display: block;
-}
-
 .span {
   font-size: 1.3rem;
   font-weight: 350;
@@ -136,6 +136,10 @@ button:hover {
   color: white;
 }
 
+.btn2 {
+  display: none;
+}
+
 footer {
   background-color: black;
   margin-top: 5rem;
@@ -144,7 +148,6 @@ footer {
 
 .footer-nav > * {
   padding: 1rem;
-  /* max-width: min-content; */
 }
 
 .copyright,
