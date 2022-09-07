@@ -1,13 +1,17 @@
-// document.getElementById("btn").onclick = function () { seeAll() };
+const button = document.querySelector('.btn');
+const seeAll = document.querySelectorAll('.see-all');
 
-// function seeAll() {
-//     document.querySelectorAll("see-all").classList.toggle("show");
+button.addEventListener('click', function () {
+    seeAll.forEach(seeAll => {
+        seeAll.classList.toggle('show');
+        btn.innerText = "Collapse";
+    });
+});
+
+// if (btn.innerText == "Collapse") {
+//     btn.innerText = "See All";
+// } else if (btn.innerText = "See All")
+//     btn.innerText = "Collapse";
+// } else {
+//     null
 // }
-
-
-const button = document.querySelector('btn');
-const seeAll = document.querySelectorAll('see-all');
-
-button.onMouseclick = function () {
-    seeAll.classList.toggle('show');
-}
