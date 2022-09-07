@@ -1,17 +1,19 @@
-const button = document.querySelector('.btn');
+const seeAllButton = document.querySelector('.btn');
+const collapseButton = document.querySelector('.btn2')
 const seeAll = document.querySelectorAll('.see-all');
 
-button.addEventListener('click', function () {
+seeAllButton.addEventListener('click', function () {
     seeAll.forEach(seeAll => {
-        seeAll.classList.toggle('show');
-        btn.innerText = "Collapse";
-    });
+        seeAll.style.display = "block"
+        btn.style.display = "none";
+        btn2.style.display = "block"
+    })
 });
 
-// if (btn.innerText == "Collapse") {
-//     btn.innerText = "See All";
-// } else if (btn.innerText = "See All")
-//     btn.innerText = "Collapse";
-// } else {
-//     null
-// }
+collapseButton.addEventListener('click', function () {
+    seeAll.forEach(seeAll => {
+        seeAll.style.display = "none"
+        btn.style.display = "block";
+        btn2.style.display = "none"
+    })
+});
