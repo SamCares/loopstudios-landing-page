@@ -39,13 +39,8 @@ body {
 .span,
 h2:hover,
 .footer-nav,
-.nav {
+li {
   color: white;
-}
-
-ul > * {
-  list-style-type: none;
-  padding: 1rem;
 }
 
 .header {
@@ -57,6 +52,11 @@ ul > * {
 
 i.logo {
   width: 80%;
+}
+
+i.hamburger:hover,
+i.logo:hover {
+  cursor: pointer;
 }
 
 .nav {
@@ -140,6 +140,14 @@ button:hover {
   display: none;
 }
 
+picture:hover > * {
+  cursor: pointer;
+  opacity: 30%;
+  transition-duration: 0.2s;
+  color: black;
+  font-weight: 400;
+}
+
 footer {
   background-color: black;
   margin-top: 5rem;
@@ -175,9 +183,10 @@ footer {
 }
 
 /* Desktop Design */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .main-container {
     width: 1440px;
+    max-width: 100%;
   }
   body {
     background: url(/images/desktop/image-hero.jpg) no-repeat;
@@ -191,21 +200,26 @@ footer {
   .first-section {
     font-size: 70px;
     padding: 1.5rem;
-    margin: 9rem 10rem;
+    margin: 7rem 10rem;
     max-width: 45%;
   }
 
   .nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style: none;
+    text-align: center;
+    justify-self: end;
   }
 
   li {
-    padding: 0;
+    padding: 0.5rem;
+    text-decoration: none;
   }
 
   li:hover {
     cursor: pointer;
-    border-bottom: 1px solid white;
+    border-bottom: 0.05px solid white;
   }
 
   .hamburger {
@@ -226,14 +240,6 @@ footer {
     background-color: white;
     transform: translate(720px, -500px);
     padding: 3.5rem;
-  }
-
-  picture:hover > * {
-    cursor: pointer;
-    opacity: 30%;
-    transition-duration: 0.2s;
-    color: black;
-    font-weight: 400;
   }
 
   .copy,
