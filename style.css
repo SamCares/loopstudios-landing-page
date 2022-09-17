@@ -59,8 +59,16 @@ i.logo:hover {
   cursor: pointer;
 }
 
-.nav {
+.main-nav {
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  position: absolute;
   display: none;
+}
+
+ul {
+  padding: 3rem;
+  list-style: none;
 }
 
 .close {
@@ -156,6 +164,7 @@ footer {
 
 .footer-nav > * {
   padding: 1rem;
+  list-style: none;
 }
 
 .copyright,
@@ -181,6 +190,25 @@ footer {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
 }
+
+/* ipad design */
+/* @media screen and (min-width: 768px) {
+  .main-container {
+    width: 1024px;
+    max-width: 100%;
+  }
+
+  .first-section {
+    font-size: 43px;
+    margin: 3rem 10rem;
+    max-width: 40%;
+  }
+
+  .second-section-copy {
+    width: 51%;
+    transform: translate(500px, -424px);
+  }
+} */
 
 /* Desktop Design */
 @media screen and (min-width: 600px) {
