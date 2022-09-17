@@ -3,6 +3,7 @@ const collapseButton = document.querySelector('.btn2')
 const seeAll = document.querySelectorAll('.see-all');
 const hamburger = document.querySelector('.hamburger');
 const close = document.querySelector('.close');
+const mainNav = document.querySelector('.main-nav')
 
 seeAllButton.addEventListener('click', function () {
     seeAll.forEach(seeAll => {
@@ -23,6 +24,7 @@ collapseButton.addEventListener('click', function () {
 hamburger.addEventListener('click', function () {
     close.style.display = "block";
     hamburger.style.display = "none";
+    mainNav.style.display = "block";
 })
 
 close.addEventListener('click', function () {
