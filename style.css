@@ -44,7 +44,7 @@ li {
 }
 
 .header,
-.mobile-nav {
+.mobile-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,11 +61,15 @@ i.close:hover {
   cursor: pointer;
 }
 
-.main-nav {
+.mobile-nav {
   background-color: hsl(0, 0%, 0%);
   color: white;
   position: absolute;
   transform: translateY(12rem);
+  display: none;
+}
+
+.desktop-nav {
   display: none;
 }
 
@@ -243,13 +247,17 @@ footer {
     max-width: 45%;
   }
 
-  .nav {
+  .mobile-nav {
+    /* display: none; */
+  }
+
+  .desktop-nav > *,
+  .desktop-nav {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    list-style: none;
-    text-align: center;
-    justify-self: end;
-    border: 1px solid red;
+    margin: 0 auto;
+    text-transform: none;
+    padding: 0;
   }
 
   li {
