@@ -43,7 +43,8 @@ li {
   color: white;
 }
 
-.header {
+.header,
+.mobile-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +56,8 @@ i.logo {
 }
 
 i.hamburger:hover,
-i.logo:hover {
+i.logo:hover,
+i.close:hover {
   cursor: pointer;
 }
 
@@ -63,16 +65,25 @@ i.logo:hover {
   background-color: hsl(0, 0%, 0%);
   color: white;
   position: absolute;
+  transform: translateY(12rem);
   display: none;
 }
 
 ul {
-  padding: 3rem;
+  margin-top: 5rem;
+  padding: 2rem 14rem 2rem 2rem;
   list-style: none;
+  text-transform: uppercase;
+  text-align: left;
 }
 
-.close {
-  display: none;
+ul > * {
+  padding-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .first-section {
@@ -238,6 +249,7 @@ footer {
     list-style: none;
     text-align: center;
     justify-self: end;
+    border: 1px solid red;
   }
 
   li {
