@@ -22,13 +22,10 @@ collapseButton.addEventListener('click', function () {
 });
 
 hamburger.addEventListener('click', function () {
-    close.style.display = "block";
-    hamburger.style.display = "none";
     mainNav.style.display = "block";
 })
 
 close.addEventListener('click', function () {
-    close.style.display = "none";
-    hamburger.style.display = "block";
+    mainNav.style.display = "none";
 })
 
