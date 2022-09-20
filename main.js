@@ -3,7 +3,7 @@ const collapseButton = document.querySelector('.btn2')
 const seeAll = document.querySelectorAll('.see-all');
 const hamburger = document.querySelector('.hamburger');
 const close = document.querySelector('.close');
-const mobileNav = document.querySelector('.mobile-nav')
+const mobileNav = document.querySelector('.nav-container')
 
 seeAllButton.addEventListener('click', function () {
     seeAll.forEach(seeAll => {
