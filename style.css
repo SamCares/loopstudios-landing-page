@@ -37,8 +37,7 @@ body {
 
 .first-section,
 .span,
-h2:hover,
-.footer-nav {
+h2:hover {
   color: white;
 }
 
@@ -173,24 +172,36 @@ footer {
   padding: 2.5rem;
 }
 
-.footer-nav > * {
-  padding: 1rem;
+.footer-logo {
+  margin-bottom: 1.5rem;
+}
+
+.footer-nav-menu {
   list-style: none;
+  line-height: 50px;
+  margin-bottom: 2rem;
+}
+
+.footer-nav-links {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+a:hover,
+.footer-icons > i:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+i > img {
+  padding: 0.25rem;
 }
 
 .copyright,
 .attribution {
   margin-top: 1rem;
-}
-
-.footer-icons > i {
-  padding-right: 0.5rem;
-}
-
-.footer-icons > i:hover,
-.footer-nav > li:hover {
-  cursor: pointer;
-  border-bottom: 2px solid white;
 }
 
 .attribution {
@@ -310,6 +321,13 @@ footer {
     text-align: left;
   }
 
+  #main-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 3rem 10%;
+    align-content: space-between;
+  }
+
   .third-section-heading,
   .copy-heading {
     font-size: 50px;
@@ -321,10 +339,21 @@ footer {
     font-size: medium;
   }
 
-  #main-gallery {
+  .footer-info {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    margin: 3rem 10%;
-    align-content: space-between;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .footer-logo {
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  .footer-nav-menu {
+    display: flex;
+    width: 80%;
+    margin-right: 0;
+    justify-content: space-between;
+    font-size: small;
   }
 }
