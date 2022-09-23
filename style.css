@@ -309,9 +309,9 @@ i > img {
   }
   .second-section-copy {
     position: absolute;
-    width: 40%;
+    width: 42%;
     background-color: white;
-    transform: translate(720px, -500px);
+    transform: translate(650px, -500px);
     padding: 3.5rem;
   }
 
